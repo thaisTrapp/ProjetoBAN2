@@ -1,0 +1,53 @@
+
+### Instruções para Compilação e Execução da Aplicação
+
+#### 1. **Pré-requisitos**
+- **PHP**: A aplicação foi desenvolvida em PHP.
+- **Servidor Web**: Apache (via XAMPP).
+- **MySQL**: Banco de dados utilizado (pode ser MariaDB também).
+
+#### 2. **Instalação e Configuração**
+
+1. **Baixar o Repositório**:
+   Clone o repositório para sua máquina:
+   ```bash
+   git clone https://github.com/thaisTrapp/ProjetoBAN2
+   ```
+
+2. **Mover para o Diretório do Servidor Web**:
+   No XAMPP, mova o repositório clonado para o diretório `htdocs`, localizado em:
+   ```bash
+   C:\xampp\htdocs\
+   ```
+   Coloque o projeto dentro de uma pasta chamada `projeto`, por exemplo:
+   ```bash
+   C:\xampp\htdocs\projeto\
+   ```
+
+3. **Configuração do Banco de Dados**:
+   - Abra o **phpMyAdmin** no navegador em `http://localhost/phpmyadmin/`.
+   - Crie um banco de dados chamado `projeto`.
+   - Importe o arquivo `banco_de_dados.sql` para criar as tabelas necessárias.
+
+4. **Conexão com o Banco de Dados**:
+   Verifique as configurações de conexão no arquivo `conexao.php`. Certifique-se de que os parâmetros estão corretos:
+   ```php
+   $conexao = new mysqli('localhost', 'root', '', 'projeto');
+   ```
+
+#### 3. **Execução**
+
+1. **Iniciar Apache e MySQL**:
+   - Abra o **XAMPP Control Panel**.
+   - Clique em "Start" para **Apache** e **MySQL**.
+
+2. **Abrir a Aplicação**:
+   Acesse no navegador:
+   ```bash
+   http://localhost/projeto/menu.php
+   ```
+
+#### 4. **Funcionalidades**
+- **Cadastro e Listagem de Autores e Editoras**
+- **Cadastro e Listagem de Livros**
+- **Edição e Exclusão Lógica de Autores e Editoras**

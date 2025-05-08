@@ -34,9 +34,9 @@
         <div class="col-md-4">
             <h4>Relatórios</h4>
             <ul class="list-group">
-                <li class="list-group-item"><a href="relatorio_livros_por_autor.php">Livros por Autor</a></li>
-                <li class="list-group-item"><a href="relatorio_livros_por_editora.php">Livros por Editora</a></li>
-                <li class="list-group-item"><a href="relatorio_qtd_livros_por_editora.php">Qtd. de Livros por Editora</a></li>
+                <li class="list-group-item"><a href="_relatorio_livros_por_autor.php">Livros por Autor</a></li>
+                <li class="list-group-item"><a href="_relatorio_livros_por_editora.php">Livros por Editora</a></li>
+                <li class="list-group-item"><a href="_relatorio_autores_por_editora.php">Autores por Editora</a></li>
             </ul>
         </div>
     </div>
